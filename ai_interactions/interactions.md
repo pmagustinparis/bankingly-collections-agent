@@ -17,6 +17,12 @@ Sesión del 2026-08-30 al 2026-08-31.
 
 ## 1. El prompt que produjo la pieza más importante del prototipo
 
+**Por qué este momento:** el gate —`backend/approval.py`— es la pieza central del
+proyecto. Este mensaje lo pide aislado, "señalable en una pantalla", y exige una prueba
+en soledad que demuestre el rechazo sin aprobación. De ahí salió el escenario 7 de
+`probar_gate.py`, la demostración usada en la sesión en vivo.
+
+
 #### USUARIO · 2026-08-30 22:30:30
 
 Excelente el Paso 1. Revisé los 10 curados uno por uno y cada arquetipo quedó bien diseñado: me gustó especialmente que en el arquetipo C metiste dos sabores distintos de ambigüedad (intermitente en CLI-005, consecutivo y reciente en CLI-006), y que en el D los dos casos van en direcciones opuestas (el monto altísimo con buen comportamiento y la deuda mínima con atraso largo). Esos son justo los casos que hacen valioso el análisis de errores.
@@ -169,21 +175,14 @@ Agregué al README los ADRs 004 a 007: la convención del historial, la categor�
 
 Quedo esperando tu confirmación para avanzar al Paso 3 (`agent.py`, el harness).
 
-### Por qué este momento
-
-El gate —`backend/approval.py`— es la pieza central del proyecto: la garantía de que
-ninguna acción se ejecuta sin aprobación humana, y de que esa garantía vive en código y
-no en el prompt. Este mensaje es el que la produjo, y no pide sólo código: pide el gate
-aislado, "señalable en una pantalla", y una prueba en soledad —sin agente, sin modelo—
-que demuestre que rechaza la ejecución si no hay aprobación. De ahí salió el escenario 7
-de `probar_gate.py`: una propuesta que se fabrica ya "aprobada" y usurpa el id de una
-real, y el gate la bloquea igual porque consulta el repositorio en vez de creerle al
-objeto. Ese escenario es la demostración que se usa en la sesión en vivo para probar que
-el control es de código.
-
----
-
 ## 2. El intercambio donde el modelo devolvió algo incorrecto, y cómo se detectó
+
+**Cómo se detectó:** no lo encontró el modelo revisándose a sí mismo — lo encontró el
+usuario usando el prototipo, después de que el frontend se hubiera dado por verificado
+sin abrirlo en un navegador. La causa real (`GET /propuestas` pisando el `403` recién
+mostrado) se confirmó con un DOM simulado corriendo el `app.js` real, no con una
+afirmación sin probar.
+
 
 #### USUARIO · 2026-08-31 00:19:37
 
@@ -333,20 +332,13 @@ Ese último punto lo dejé explícito porque le da fuerza en la sesión: es una 
 
 No arranco el Paso 6 hasta que me confirmes.
 
-### Cómo se detectó
-
-Este error no lo encontró el modelo revisándose a sí mismo: lo encontró el usuario
-usando el prototipo. En el turno anterior se había dado por verificado el frontend sin
-haberlo abierto en un navegador. La causa real —que el refresco de la bandeja
-(`GET /propuestas`) escribía su propio `HTTP 200` encima del `403` recién mostrado,
-porque los dos usaban la misma función de log— se encontró recién al separar las
-llamadas que son "acciones del analista" de las que son "recargas internas" del
-frontend, y comprobándolo con un DOM simulado que corre el `app.js` real (no una
-afirmación sin correr nada, que es lo que había fallado la primera vez).
-
----
-
 ## 3. El momento en que se cambió de enfoque
+
+**Qué cambió y por qué:** en vez de cerrar el eval con los umbrales cumplidos, se pidió
+una segunda tanda de casos para forzar el escalamiento y distinguir si el agente era
+prudente o incapaz de escalar — algo que los 50 casos base no podían responder.
+El resultado (4 de 4 escaló) movió la conclusión del agente al propio diseño del eval.
+
 
 #### USUARIO · 2026-08-31 02:48:14
 
@@ -587,16 +579,3 @@ Integridad preservada: el eval set base sigue con el hash `82c8f1dc…`, idénti
 Lo que más me convence para la sesión es que la parte B de la taxonomía tiene tres entradas y todas son defectos que encontré en mi propia medición. Un eval que sólo encuentra defectos en el agente probablemente no se está mirando a sí mismo.
 
 Quedo esperando tu revisión antes de cerrar el Paso 6 y pasar al 7.
-
-### Qué cambió y por qué
-
-El enfoque que se abandonó fue dar por cerrado el eval con los umbrales cumplidos (98%
-de acción apropiada, 0 errores peligrosos). La corrida base había encontrado que el
-agente nunca proponía `escalar` en 50 casos, pero la Dimensión 1 no podía distinguir si
-eso era prudencia calibrada o incapacidad de escalar: en todos los casos donde escalar
-era aceptable, `plan_de_pago` también lo era. En vez de aceptar el resultado como
-definitivo, se pidió una segunda tanda de casos diseñados específicamente para forzar
-esa distinción —mora en el techo del rango, impagos consecutivos y recientes, monto
-alto— declarada como iteración posterior y en archivos separados de los 50 originales,
-para no invalidar la comparación ya hecha. El resultado (4 de 4 escaló) cambió la
-conclusión del hallazgo: el defecto no estaba en el agente, estaba en el diseño del eval.
