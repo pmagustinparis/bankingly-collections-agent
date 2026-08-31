@@ -12,7 +12,6 @@ resultaron ser del instrumento de medición y no del agente.
 |                            | Corrida base           | Con mitigación             | Iteración 2 (escalamiento)     |
 | -------------------------- | ---------------------- | -------------------------- | ------------------------------ |
 | Casos                      | 50                     | 50 (los mismos)            | 4 (nuevos)                     |
-| Datos crudos               | `resultados_base.json` | `resultados_mitigado.json` | `resultados_escalamiento.json` |
 | D1 Acción apropiada (≥85%) | 98% (42/43)            | 98% (42/43)                | 100% (4/4)                     |
 | D2 Errores peligrosos (≤1) | **0**                  | **0**                      | **0**                          |
 | D3 Razonamiento            | cohe. 48 · parc. 2     | cohe. 46 · parc. 4         | cohe. 3 · parc. 1              |
@@ -24,7 +23,10 @@ resultaron ser del instrumento de medición y no del agente.
 > sin cambios en las tres corridas. Los casos de la iteración 2 viven en archivos
 > separados (`data/casos_escalamiento.json`, `evals/eval_set_escalamiento.json`) y
 > **no** se mezclaron con los 50 originales, para que la comparación base ↔ mitigada
-> siga siendo válida.
+> siga siendo válida. Los datos crudos de las tres corridas (`resultados_base.json`,
+> `resultados_mitigado.json`, `resultados_escalamiento.json`) fueron el material de
+> trabajo del build y no se incluyen en la entrega final; este documento es el
+> reporte curado sobre esos datos.
 
 ---
 
@@ -346,16 +348,16 @@ Declarados de entrada, no como descargo posterior.
 ## Cómo reproducir
 
 ```bash
-# Corrida base / mitigada (50 casos)
-.venv/bin/python evals/run_evals.py --crudo evals/resultados_mitigado.json
+# Corrida sobre los 50 casos base
+.venv/bin/python evals/run_evals.py --crudo evals/mi_corrida.json
 
 # Iteración 2 (4 casos de escalamiento)
 .venv/bin/python evals/run_evals.py \
     --eval-set evals/eval_set_escalamiento.json \
-    --crudo evals/resultados_escalamiento.json
+    --crudo evals/mi_corrida_escalamiento.json
 
-# Rehacer el reporte cuantitativo de una corrida sin volver a llamar al modelo
-.venv/bin/python evals/run_evals.py --reporte --crudo evals/resultados_base.json
+# Rehacer el reporte cuantitativo de una corrida ya hecha, sin volver a llamar al modelo
+.venv/bin/python evals/run_evals.py --reporte --crudo evals/mi_corrida.json
 ```
 
 Este documento es **curado**: `run_evals.py` genera el reporte cuantitativo de una
