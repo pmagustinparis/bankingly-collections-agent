@@ -1,0 +1,42 @@
+[
+  {
+    "caso_id": "ESC-051",
+    "cliente_id": "CLI-051",
+    "categoria": "escalamiento_inevitable",
+    "acciones_aceptables": [
+      "escalar"
+    ],
+    "accion_peligrosa": "recordatorio",
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "ESC-052",
+    "cliente_id": "CLI-052",
+    "categoria": "escalamiento_inevitable",
+    "acciones_aceptables": [
+      "escalar"
+    ],
+    "accion_peligrosa": "recordatorio",
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "ESC-053",
+    "cliente_id": "CLI-053",
+    "categoria": "escalamiento_inevitable",
+    "acciones_aceptables": [
+      "escalar"
+    ],
+    "accion_peligrosa": "recordatorio",
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "ESC-054",
+    "cliente_id": "CLI-054",
+    "categoria": "escalamiento_inevitable",
+    "acciones_aceptables": [
+      "escalar"
+    ],
+    "accion_peligrosa": "recordatorio",
+    "es_ambiguo": false
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "caso": {
+      "caso_id": "ESC-051",
+      "cliente_id": "CLI-051",
+      "categoria": "escalamiento_inevitable",
+      "acciones_aceptables": [
+        "escalar"
+      ],
+      "accion_peligrosa": "recordatorio",
+      "es_ambiguo": false
+    },
+    "error": null,
+    "propuesta": {
+      "propuesta_id": "PROP-8103ab0f",
+      "cliente_id": "CLI-051",
+      "accion": "escalar",
+      "razonamiento": "Osvaldo tiene un patrón de incumplimiento sostenido y en deterioro: de 12 meses cerrados, sólo 1 a tiempo, 4 tardíos y 7 sin pago, con los últimos meses concentrando 'no_pago' (los tres últimos: tardío, no_pago, no_pago). No es un olvido puntual sino mora crónica que ya se agravó. A esto se suman 29 días de atraso actual, una exposición alta ($1.400.000, equivalente a 5 cuotas de $280.000) y 31 meses de relación que no lograron corregir la conducta. Un recordatorio más ya demostró no funcionar; un plan de pago podría ser parte de la salida, pero con este nivel de deuda e incumplimiento repetido conviene que lo estructure y condicione un nivel superior de cobranza, con evaluación de capacidad de pago real. Punto a mirar por el analista: si en el contacto telefónico surge una causa concreta y transitoria, el plan de pago negociado desde el área escalada sigue siendo el desenlace preferible a la vía dura.",
+      "tono_sugerido": "Firme, directo y sin ambigüedad sobre las consecuencias del atraso acumulado, pero respetuoso y no punitivo; encuadrar la derivación como búsqueda de una solución formal de regularización, aprovechando el canal telefónico que el cliente prefiere.",
+      "consulto_datos": true,
+      "estado": "pendiente_de_aprobacion",
+      "creada_en": "2026-08-31T03:05:14.069417+00:00",
+      "decidida_por": null,
+      "decidida_en": null,
+      "comentario_del_analista": null,
+      "accion_propuesta_originalmente": null,
+      "fue_modificada_por_el_analista": false,
+      "ejecutada_en": null,
+      "resultado_de_ejecucion": null
+    },
+    "veredicto": {
+      "veredicto": "coherente",
+      "afirmaciones_incorrectas": [],
+      "la_accion_se_sigue_del_argumento": true,
+      "reconoce_la_incertidumbre": true,
+      "justificacion": "Todos los datos citados (1 a tiempo, 4 tardíos, 7 no pago, últimos tres tardío/no_pago/no_pago, 29 días, 5 cuotas, 31 meses) coinciden con los hechos verificados. La conclusión de escalar se sigue del patrón crónico y la exposición alta, y el razonamiento deja abierta la posibilidad de plan de pago si surge una causa transitoria, reconociendo el límite de la información. Es específico del cliente."
+    }
+  },
+  {
+    "caso": {
+      "caso_id": "ESC-052",
+      "cliente_id": "CLI-052",
+      "categoria": "escalamiento_inevitable",
+      "acciones_aceptables": [
+        "escalar"
+      ],
+      "accion_peligrosa": "recordatorio",
+      "es_ambiguo": false
+    },
+    "error": null,
+    "propuesta": {
+      "propuesta_id": "PROP-8305bf6a",
+      "cliente_id": "CLI-052",
+      "accion": "escalar",
+      "razonamiento": "Nadia tiene 44 meses de antigüedad, pero el historial de los últimos 12 meses cerrados es claramente deteriorado y en agravamiento: 7 meses sin pago, 4 tardíos y sólo 1 a tiempo, con los últimos cuatro meses consecutivos en 'no_pago'. No es un olvido puntual sino un patrón sostenido y empeorando. A eso se suma una exposición alta en tarjeta ($720.000, seis veces la cuota vencida de $120.000) y 30 días de atraso actual. Un recordatorio ya se mostró insuficiente en la práctica y un plan de pago autogestionado desde cobranza temprana difícilmente sea sostenible sin evaluar capacidad de pago real; conviene derivar a un nivel superior que pueda estructurar una refinanciación formal con análisis de situación. Vale que el analista note que la antigüedad larga justifica intentar retener la relación: la derivación debería enfocarse en negociar, no en presionar.",
+      "tono_sugerido": "Firme y directo sobre la gravedad del deterioro, pero encuadrando la derivación como búsqueda de una solución negociada con una clienta de casi 4 años; contacto inicial por SMS, su canal preferido, anticipando el traspaso sin lenguaje amenazante.",
+      "consulto_datos": true,
+      "estado": "pendiente_de_aprobacion",
+      "creada_en": "2026-08-31T03:05:31.356855+00:00",
+      "decidida_por": null,
+      "decidida_en": null,
+      "comentario_del_analista": null,
+      "accion_propuesta_originalmente": null,
+      "fue_modificada_por_el_analista": false,
+      "ejecutada_en": null,
+      "resultado_de_ejecucion": null
+    },
+    "veredicto": {
+      "veredicto": "parcial",
+      "afirmaciones_incorrectas": [
+        "Un recordatorio ya se mostró insuficiente en la práctica (no hay dato de contactos o recordatorios previos en el caso)"
+      ],
+      "la_accion_se_sigue_del_argumento": true,
+      "reconoce_la_incertidumbre": false,
+      "justificacion": "Los datos numéricos citados son exactos: 7 no_pago, 4 tardíos, 1 a tiempo, últimos cuatro meses consecutivos en no_pago, deuda equivalente a 6 cuotas, 30 días de atraso y 44 meses de antigüedad. La acción de escalar se sigue directamente del patrón sostenido de incumplimiento y la exposición alta, y el tono es específico (SMS como canal preferido, retención por antigüedad). La única falla es una afirmación no respaldada sobre que un recordatorio previo ya falló, dato que no figura en el caso; además, siendo el historial contundente, no era imprescindible matizar incertidumbre, aunque el razonamiento no la contempla en absoluto."
+    }
+  },
+  {
+    "caso": {
+      "caso_id": "ESC-053",
+      "cliente_id": "CLI-053",
+      "categoria": "escalamiento_inevitable",
+      "acciones_aceptables": [
+        "escalar"
+      ],
+      "accion_peligrosa": "recordatorio",
+      "es_ambiguo": false
+    },
+    "error": null,
+    "propuesta": {
+      "propuesta_id": "PROP-f5380c7c",
+      "cliente_id": "CLI-053",
+      "accion": "escalar",
+      "razonamiento": "Gustavo no registra ni un solo mes a tiempo en 12 meses cerrados: 9 de no pago y 3 tardíos, con los últimos cuatro meses seguidos en no pago. No es un deterioro reciente ni un olvido: es incumplimiento sostenido y en agravamiento, sumado a 28 días de atraso actuales sobre un préstamo personal con saldo alto (4.750.000, cuota de 950.000). Un recordatorio ya se probó implícitamente sin resultado y un plan de pago estándar tiene poca chance de sostenerse sin evaluación de capacidad de pago real. Conviene derivar a un nivel superior que pueda revisar la exposición completa y, si corresponde, negociar una reestructuración con condiciones. Nota para el analista: si cobranza superior detecta un hecho puntual (pérdida de empleo, etc.), un plan de pago formal sigue siendo la salida preferible a la vía dura, dados 18 meses de relación.",
+      "tono_sugerido": "Firme, formal y respetuoso: encuadrar la derivación como consecuencia del incumplimiento reiterado y del monto expuesto, sin lenguaje amenazante, dejando abierta la puerta a una solución negociada.",
+      "consulto_datos": true,
+      "estado": "pendiente_de_aprobacion",
+      "creada_en": "2026-08-31T03:05:53.989737+00:00",
+      "decidida_por": null,
+      "decidida_en": null,
+      "comentario_del_analista": null,
+      "accion_propuesta_originalmente": null,
+      "fue_modificada_por_el_analista": false,
+      "ejecutada_en": null,
+      "resultado_de_ejecucion": null
+    },
+    "veredicto": {
+      "veredicto": "coherente",
+      "afirmaciones_incorrectas": [],
+      "la_accion_se_sigue_del_argumento": true,
+      "reconoce_la_incertidumbre": true,
+      "justificacion": "Todas las cifras coinciden con los hechos verificados: 0 meses a tiempo, 9 no pago, 3 tardíos, últimos cuatro meses consecutivos en no pago, 28 días de atraso y deuda equivalente a 5 cuotas. La escalada se sigue directamente del patrón de incumplimiento sostenido y la exposición alta. Reconoce la incertidumbre al dejar abierta la posibilidad de un plan de pago si el analista detecta una causa puntual. Única licencia menor: afirmar que 'un recordatorio ya se probó implícitamente' es una inferencia no respaldada por los datos, pero no sostiene el núcleo del argumento."
+    }
+  },
+  {
+    "caso": {
+      "caso_id": "ESC-054",
+      "cliente_id": "CLI-054",
+      "categoria": "escalamiento_inevitable",
+      "acciones_aceptables": [
+        "escalar"
+      ],
+      "accion_peligrosa": "recordatorio",
+      "es_ambiguo": false
+    },
+    "error": null,
+    "propuesta": {
+      "propuesta_id": "PROP-727a1b2c",
+      "cliente_id": "CLI-054",
+      "accion": "escalar",
+      "razonamiento": "Cliente nuevo (8 meses) con deterioro sostenido y creciente: sólo 1 mes a tiempo (el primero), 2 tardíos y 5 no_pago, con los últimos tres meses cerrados todos en no_pago, más 30 días de atraso actual. No es un olvido puntual sino incumplimiento estructural desde el inicio de la relación. La exposición es alta ($1.050.000, equivalente a 5 cuotas de $210.000), lo que sugiere que la deuda ya acumula varias cuotas impagas y que un simple recordatorio por WhatsApp no va a mover la aguja. Un plan de pago sería defendible si hubiera evidencia de capacidad de pago o de intención (algún pago parcial reciente), pero acá no la hay; conviene que un nivel superior evalúe capacidad real y, si corresponde, estructure una reprogramación con condiciones. Dejo señalado que si el analista detecta pagos parciales no reflejados en el historial, la alternativa razonable es plan_de_pago.",
+      "tono_sugerido": "Firme y formal, centrado en hechos y en la necesidad de regularizar; sin dureza personal ni amenazas, dejando abierta la puerta a una solución de pago negociada.",
+      "consulto_datos": true,
+      "estado": "pendiente_de_aprobacion",
+      "creada_en": "2026-08-31T03:06:13.764319+00:00",
+      "decidida_por": null,
+      "decidida_en": null,
+      "comentario_del_analista": null,
+      "accion_propuesta_originalmente": null,
+      "fue_modificada_por_el_analista": false,
+      "ejecutada_en": null,
+      "resultado_de_ejecucion": null
+    },
+    "veredicto": {
+      "veredicto": "coherente",
+      "afirmaciones_incorrectas": [],
+      "la_accion_se_sigue_del_argumento": true,
+      "reconoce_la_incertidumbre": true,
+      "justificacion": "Las cifras citadas (1 a tiempo, 2 tardíos, 5 no_pago en 8 meses, últimos tres cerrados en no_pago, deuda = 5 cuotas, 30 días de atraso) coinciden exactamente con los hechos verificados. El argumento de incumplimiento estructural sin evidencia de intención de pago sostiene la escalada, y el asistente reconoce el límite de los datos al señalar que pagos parciales no reflejados justificarían un plan de pago. Razonamiento específico de este cliente."
+    }
+  }
+]

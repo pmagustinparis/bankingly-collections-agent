@@ -1,0 +1,98 @@
+[
+  {
+    "cliente_id": "CLI-051",
+    "nombre": "Osvaldo Rinaldi",
+    "tipo_de_producto": "prestamo_personal",
+    "dias_de_atraso": 29,
+    "monto_adeudado": 1400000,
+    "cuota_vencida": 280000,
+    "antiguedad_meses": 31,
+    "canal_preferido": "telefono",
+    "historial_de_pagos": [
+      "a_tiempo",
+      "tardio",
+      "no_pago",
+      "tardio",
+      "no_pago",
+      "no_pago",
+      "tardio",
+      "no_pago",
+      "no_pago",
+      "tardio",
+      "no_pago",
+      "no_pago"
+    ],
+    "arquetipo": "escalamiento_inevitable"
+  },
+  {
+    "cliente_id": "CLI-052",
+    "nombre": "Nadia Bracamonte",
+    "tipo_de_producto": "tarjeta_de_credito",
+    "dias_de_atraso": 30,
+    "monto_adeudado": 720000,
+    "cuota_vencida": 120000,
+    "antiguedad_meses": 44,
+    "canal_preferido": "sms",
+    "historial_de_pagos": [
+      "tardio",
+      "a_tiempo",
+      "tardio",
+      "no_pago",
+      "tardio",
+      "no_pago",
+      "no_pago",
+      "tardio",
+      "no_pago",
+      "no_pago",
+      "no_pago",
+      "no_pago"
+    ],
+    "arquetipo": "escalamiento_inevitable"
+  },
+  {
+    "cliente_id": "CLI-053",
+    "nombre": "Gustavo Peñalva",
+    "tipo_de_producto": "prestamo_personal",
+    "dias_de_atraso": 28,
+    "monto_adeudado": 4750000,
+    "cuota_vencida": 950000,
+    "antiguedad_meses": 18,
+    "canal_preferido": "email",
+    "historial_de_pagos": [
+      "tardio",
+      "no_pago",
+      "no_pago",
+      "tardio",
+      "no_pago",
+      "no_pago",
+      "no_pago",
+      "tardio",
+      "no_pago",
+      "no_pago",
+      "no_pago",
+      "no_pago"
+    ],
+    "arquetipo": "escalamiento_inevitable"
+  },
+  {
+    "cliente_id": "CLI-054",
+    "nombre": "Yamila Corvalán",
+    "tipo_de_producto": "prestamo_personal",
+    "dias_de_atraso": 30,
+    "monto_adeudado": 1050000,
+    "cuota_vencida": 210000,
+    "antiguedad_meses": 8,
+    "canal_preferido": "whatsapp",
+    "historial_de_pagos": [
+      "a_tiempo",
+      "tardio",
+      "no_pago",
+      "no_pago",
+      "tardio",
+      "no_pago",
+      "no_pago",
+      "no_pago"
+    ],
+    "arquetipo": "escalamiento_inevitable"
+  }
+]

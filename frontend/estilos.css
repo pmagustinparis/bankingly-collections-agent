@@ -1,0 +1,161 @@
+/* Estilos mínimos. Legibilidad antes que diseño: esta pantalla existe para que un
+   analista lea un razonamiento y decida, no para lucirse. */
+
+:root {
+  --tinta: #1a1c1f;
+  --tenue: #6b7280;
+  --borde: #e2e5ea;
+  --fondo: #f6f7f9;
+  --papel: #ffffff;
+  --acento: #1f5fa9;
+  --verde: #1a7f4b;
+  --rojo: #b3261e;
+  --ambar: #9a6700;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0 0 6rem;
+  font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--tinta);
+  background: var(--fondo);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1.25rem 1.5rem;
+  background: var(--papel);
+  border-bottom: 1px solid var(--borde);
+}
+header h1 { margin: 0; font-size: 1.15rem; }
+header p { margin: .15rem 0 0; color: var(--tenue); font-size: .875rem; }
+
+.analista { font-size: .8rem; color: var(--tenue); display: grid; gap: .25rem; }
+.analista input {
+  font: inherit; padding: .35rem .5rem;
+  border: 1px solid var(--borde); border-radius: 6px; color: var(--tinta);
+}
+
+main { max-width: 900px; margin: 0 auto; padding: 1.5rem; display: grid; gap: 2rem; }
+
+h2 { font-size: .95rem; margin: 0 0 .75rem; text-transform: uppercase; letter-spacing: .04em; }
+.contador { color: var(--tenue); font-weight: normal; text-transform: none; letter-spacing: 0; }
+.ayuda { margin: 0 0 .75rem; color: var(--tenue); font-size: .875rem; }
+
+.panel, .tarjeta {
+  background: var(--papel);
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  padding: 1rem 1.15rem;
+}
+.tarjeta { margin-bottom: .85rem; }
+
+.fila { display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; }
+
+select, input[type="text"] {
+  font: inherit; padding: .45rem .55rem;
+  border: 1px solid var(--borde); border-radius: 6px; background: var(--papel);
+  color: var(--tinta);
+}
+input[type="text"] { flex: 1; min-width: 12rem; }
+
+button {
+  font: inherit; padding: .45rem .8rem; cursor: pointer;
+  border: 1px solid var(--borde); border-radius: 6px;
+  background: var(--papel); color: var(--tinta);
+}
+button:hover { border-color: #c8ccd3; }
+button:disabled { opacity: .5; cursor: progress; }
+.primario { background: var(--acento); border-color: var(--acento); color: #fff; }
+.aprobar  { background: var(--verde);  border-color: var(--verde);  color: #fff; }
+.rechazar { color: var(--rojo); }
+.enlace {
+  border: none; background: none; padding: 0;
+  color: var(--tenue); text-decoration: underline; font-size: .8rem;
+}
+
+/* Cabecera de la tarjeta: cliente y acción propuesta */
+.tarjeta-encabezado {
+  display: flex; justify-content: space-between; align-items: baseline;
+  gap: .75rem; flex-wrap: wrap;
+}
+.cliente-nombre { font-weight: 600; }
+.cliente-id { color: var(--tenue); font-size: .8rem; font-family: ui-monospace, monospace; }
+
+.accion {
+  font-family: ui-monospace, monospace; font-size: .85rem;
+  padding: .2rem .5rem; border-radius: 5px;
+  background: #eef2f7; border: 1px solid #dbe3ec;
+}
+
+.datos {
+  margin: .7rem 0; padding: .6rem .7rem;
+  background: var(--fondo); border-radius: 7px;
+  font-size: .85rem; color: #3f444b;
+}
+.datos dl { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: .35rem .9rem; margin: 0; }
+.datos dt { color: var(--tenue); font-size: .75rem; }
+.datos dd { margin: 0; }
+
+.historial { margin-top: .55rem; display: flex; gap: 3px; flex-wrap: wrap; align-items: center; }
+.mes { width: 15px; height: 15px; border-radius: 3px; }
+.mes.a_tiempo { background: #bfe3cd; }
+.mes.tardio   { background: #f2d9a0; }
+.mes.no_pago  { background: #eab5b0; }
+.leyenda { color: var(--tenue); font-size: .72rem; margin-left: .4rem; }
+
+.razonamiento { margin: .5rem 0; }
+.tono { color: var(--tenue); font-size: .85rem; margin: .35rem 0 .8rem; }
+
+.acciones { display: flex; gap: .5rem; flex-wrap: wrap; align-items: center;
+            padding-top: .75rem; border-top: 1px solid var(--borde); }
+.acciones-fila-2 { margin-top: .5rem; }
+
+.aviso {
+  margin-top: .6rem; padding: .5rem .65rem; border-radius: 6px;
+  font-size: .82rem; background: #fdf3e3; border: 1px solid #f0dcb8; color: var(--ambar);
+}
+
+.estado { font-size: .78rem; font-family: ui-monospace, monospace; }
+.estado.aprobada  { color: var(--verde); }
+.estado.rechazada { color: var(--rojo); }
+.estado.ejecutada { color: var(--acento); }
+.estado.pendiente_de_aprobacion { color: var(--ambar); }
+
+.vacio { color: var(--tenue); font-size: .875rem; padding: .5rem 0; }
+
+/* Consola de respuestas del backend */
+.consola {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  background: #1b1e23; color: #d7dbe0;
+  border-top: 1px solid #2c3138;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .78rem;
+}
+.consola-encabezado {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: .4rem .8rem; border-bottom: 1px solid #2c3138; color: #9aa3ad;
+}
+.consola-encabezado .enlace { color: #9aa3ad; }
+.consola pre { margin: 0; padding: .6rem .8rem; max-height: 8.5rem; overflow: auto; white-space: pre-wrap; }
+.consola.oculta pre { display: none; }
+.consola .ok { color: #7fd39b; }
+.consola .error { color: #f2938c; }
+
+/* Resultado de la última acción del analista. Queda fijo hasta la próxima acción:
+   la demostración del gate tiene que poder leerse con calma, no de reojo. */
+.consola.hay-error { border-top: 3px solid #e5534b; }
+.consola.hay-error .consola-encabezado { color: #ffb3ad; background: #2a1c1c; }
+
+.consola-mensaje {
+  margin: 0; padding: .7rem .8rem;
+  font-size: .95rem; line-height: 1.45; font-weight: 600;
+  color: #ffd6d2; background: #3a1f1e; border-bottom: 1px solid #2c3138;
+}
+.consola:not(.hay-error) .consola-mensaje { display: none; }
+.consola.oculta .consola-mensaje { display: none; }

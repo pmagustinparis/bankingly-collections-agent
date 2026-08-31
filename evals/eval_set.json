@@ -1,0 +1,534 @@
+[
+  {
+    "caso_id": "EVAL-001",
+    "cliente_id": "CLI-001",
+    "categoria": "buen_pagador_olvidadizo",
+    "acciones_aceptables": [
+      "recordatorio"
+    ],
+    "accion_peligrosa": "escalar",
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-002",
+    "cliente_id": "CLI-002",
+    "categoria": "buen_pagador_olvidadizo",
+    "acciones_aceptables": [
+      "recordatorio"
+    ],
+    "accion_peligrosa": "escalar",
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-003",
+    "cliente_id": "CLI-003",
+    "categoria": "moroso_recurrente",
+    "acciones_aceptables": [
+      "plan_de_pago",
+      "escalar"
+    ],
+    "accion_peligrosa": "recordatorio",
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-004",
+    "cliente_id": "CLI-004",
+    "categoria": "moroso_recurrente",
+    "acciones_aceptables": [
+      "plan_de_pago",
+      "escalar"
+    ],
+    "accion_peligrosa": "recordatorio",
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-005",
+    "cliente_id": "CLI-005",
+    "categoria": "ambiguo_genuino",
+    "acciones_aceptables": [
+      "recordatorio",
+      "plan_de_pago"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": true
+  },
+  {
+    "caso_id": "EVAL-006",
+    "cliente_id": "CLI-006",
+    "categoria": "ambiguo_genuino",
+    "acciones_aceptables": [
+      "recordatorio",
+      "plan_de_pago"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": true
+  },
+  {
+    "caso_id": "EVAL-007",
+    "cliente_id": "CLI-007",
+    "categoria": "monto_atipico",
+    "acciones_aceptables": [
+      "recordatorio",
+      "escalar"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-008",
+    "cliente_id": "CLI-008",
+    "categoria": "monto_atipico",
+    "acciones_aceptables": [
+      "recordatorio"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-009",
+    "cliente_id": "CLI-009",
+    "categoria": "cliente_nuevo",
+    "acciones_aceptables": [
+      "recordatorio",
+      "plan_de_pago"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-010",
+    "cliente_id": "CLI-010",
+    "categoria": "cliente_nuevo",
+    "acciones_aceptables": [
+      "recordatorio",
+      "plan_de_pago"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-011",
+    "cliente_id": "CLI-011",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-012",
+    "cliente_id": "CLI-012",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio",
+      "plan_de_pago"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-013",
+    "cliente_id": "CLI-013",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio",
+      "plan_de_pago"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-014",
+    "cliente_id": "CLI-014",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-015",
+    "cliente_id": "CLI-015",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-016",
+    "cliente_id": "CLI-016",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio",
+      "plan_de_pago",
+      "escalar"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": true
+  },
+  {
+    "caso_id": "EVAL-017",
+    "cliente_id": "CLI-017",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "plan_de_pago",
+      "escalar"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-018",
+    "cliente_id": "CLI-018",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-019",
+    "cliente_id": "CLI-019",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-020",
+    "cliente_id": "CLI-020",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio",
+      "plan_de_pago"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-021",
+    "cliente_id": "CLI-021",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "plan_de_pago",
+      "escalar"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-022",
+    "cliente_id": "CLI-022",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-023",
+    "cliente_id": "CLI-023",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-024",
+    "cliente_id": "CLI-024",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio"
+    ],
+    "accion_peligrosa": "escalar",
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-025",
+    "cliente_id": "CLI-025",
+    "categoria": "buen_pagador_atraso_largo",
+    "acciones_aceptables": [
+      "recordatorio",
+      "plan_de_pago"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-026",
+    "cliente_id": "CLI-026",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio",
+      "plan_de_pago"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-027",
+    "cliente_id": "CLI-027",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio",
+      "plan_de_pago"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-028",
+    "cliente_id": "CLI-028",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio"
+    ],
+    "accion_peligrosa": "escalar",
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-029",
+    "cliente_id": "CLI-029",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio"
+    ],
+    "accion_peligrosa": "escalar",
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-030",
+    "cliente_id": "CLI-030",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-031",
+    "cliente_id": "CLI-031",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-032",
+    "cliente_id": "CLI-032",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-033",
+    "cliente_id": "CLI-033",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio",
+      "plan_de_pago",
+      "escalar"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": true
+  },
+  {
+    "caso_id": "EVAL-034",
+    "cliente_id": "CLI-034",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio",
+      "plan_de_pago"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-035",
+    "cliente_id": "CLI-035",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio",
+      "plan_de_pago"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-036",
+    "cliente_id": "CLI-036",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio",
+      "plan_de_pago"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-037",
+    "cliente_id": "CLI-037",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio",
+      "plan_de_pago"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-038",
+    "cliente_id": "CLI-038",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio",
+      "plan_de_pago"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-039",
+    "cliente_id": "CLI-039",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio"
+    ],
+    "accion_peligrosa": "escalar",
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-040",
+    "cliente_id": "CLI-040",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "plan_de_pago",
+      "escalar"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-041",
+    "cliente_id": "CLI-041",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-042",
+    "cliente_id": "CLI-042",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio",
+      "plan_de_pago",
+      "escalar"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": true
+  },
+  {
+    "caso_id": "EVAL-043",
+    "cliente_id": "CLI-043",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio"
+    ],
+    "accion_peligrosa": "escalar",
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-044",
+    "cliente_id": "CLI-044",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio",
+      "plan_de_pago",
+      "escalar"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": true
+  },
+  {
+    "caso_id": "EVAL-045",
+    "cliente_id": "CLI-045",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio"
+    ],
+    "accion_peligrosa": "escalar",
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-046",
+    "cliente_id": "CLI-046",
+    "categoria": "buen_pagador_atraso_largo",
+    "acciones_aceptables": [
+      "recordatorio",
+      "plan_de_pago"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-047",
+    "cliente_id": "CLI-047",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-048",
+    "cliente_id": "CLI-048",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-049",
+    "cliente_id": "CLI-049",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio"
+    ],
+    "accion_peligrosa": "escalar",
+    "es_ambiguo": false
+  },
+  {
+    "caso_id": "EVAL-050",
+    "cliente_id": "CLI-050",
+    "categoria": "normal",
+    "acciones_aceptables": [
+      "recordatorio",
+      "plan_de_pago",
+      "escalar"
+    ],
+    "accion_peligrosa": null,
+    "es_ambiguo": true
+  }
+]

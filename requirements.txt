@@ -1,0 +1,9 @@
+# Dependencias mínimas. Cada una tiene una razón explícita.
+# Versiones acotadas por major para que el setup sea reproducible.
+
+anthropic>=1.2.0,<2.0.0        # cliente oficial de Anthropic: es el agente llamando al modelo
+fastapi>=0.141.0,<1.0.0        # API del backend (evaluar caso / aprobar / rechazar / ejecutar)
+uvicorn>=0.52.0,<1.0.0         # servidor ASGI para correr la API localmente
+python-dotenv>=1.2.0,<2.0.0    # carga el .env en desarrollo; la key nunca vive en el código
+
+# Nota: el frontend es HTML + JS servido como archivos estáticos, sin build ni dependencias.

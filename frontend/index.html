@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cobranza temprana — bandeja del analista</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+  <div class="titulo">
+    <h1>Cobranza temprana</h1>
+    <p>Bandeja del analista. El agente propone; nada se ejecuta sin tu aprobación.</p>
+  </div>
+  <label class="analista">
+    Analista
+    <input id="analista" value="ana.perez">
+  </label>
+</header>
+
+<main>
+
+  <section class="panel">
+    <h2>Evaluar un caso</h2>
+    <p class="ayuda">El agente consulta los datos del cliente, razona y propone una acción.
+      La propuesta queda retenida esperando tu decisión.</p>
+    <div class="fila">
+      <select id="cliente"></select>
+      <button id="evaluar" class="primario">Evaluar con el agente</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pendientes de aprobación <span id="contador-pendientes" class="contador"></span></h2>
+    <div id="pendientes"></div>
+  </section>
+
+  <section>
+    <h2>Resueltas</h2>
+    <div id="resueltas"></div>
+  </section>
+
+</main>
+
+<!-- Muestra la última respuesta cruda del backend. Está acá para que se vea que el
+     front no interpreta ni decide: recibe y muestra. En la demo sirve para leer el
+     403 del gate tal como lo devuelve la API. -->
+<aside id="consola" class="consola">
+  <div class="consola-encabezado">
+    <span id="consola-estado">Última respuesta del backend</span>
+    <button id="cerrar-consola" class="enlace">ocultar</button>
+  </div>
+  <p id="consola-mensaje" class="consola-mensaje"></p>
+  <pre id="consola-cuerpo">Todavía no hubo llamadas.</pre>
+</aside>
+
+<script src="app.js"></script>
+</body>
+</html>
