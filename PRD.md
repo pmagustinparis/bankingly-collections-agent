@@ -134,6 +134,24 @@ La **Etapa 2** incorpora la oportunidad de priorización de cartera (OP-01) iden
 |---|---|---|
 | Errores peligrosos en producción | Gestión agresiva con buen cliente o blanda con moroso claro | 0 — monitoreo continuo; si sube, se frena |
 
+### Business case (esqueleto)
+
+**Inversión:**
+- Desarrollo e integración del agente con la institución (Etapa 2): equipo de producto + ingeniería, estimado 2-3 meses.
+- Costo operativo por caso: centavos de USD por evaluación (llamadas al modelo). Con 1.000 casos/mes, el costo de API es del orden de USD 20-50/mes.
+- Parametrización por institución adicional (Etapa 3): esfuerzo incremental menor una vez resuelto el primer piloto.
+
+**Retorno esperado (a validar contra el baseline real de cada institución):**
+- La mora temprana bien gestionada recupera hasta el 80% de los casos (benchmark de industria).
+- La digitalización de la gestión reporta hasta +25% de recupero y -30% de costo operativo.
+- El agente permite que el mismo equipo de analistas gestione más casos en menos tiempo: cada caso que hoy requiere análisis manual desde cero se resuelve en segundos con la propuesta razonada del agente.
+
+**Punto de equilibrio:**
+- Se alcanza cuando el ahorro en horas-analista y el incremento en recupero superan el costo de API + integración. Con los benchmarks de industria, basta con que el agente mejore el recupero en un 5-10% sobre el baseline manual para que se pague solo, dado que el costo por caso es de centavos.
+- El volumen mínimo para justificar la integración depende del tamaño de la cartera en mora temprana de cada institución. Para una institución con 1.000+ casos de mora temprana por mes, la inversión se recupera en el primer trimestre.
+
+**Este esqueleto se completa con datos reales del piloto.** No hay proyección de ROI cerrada en esta etapa porque no hay baseline real medido. Lo que sí hay es un mecanismo definido para medirlo (las métricas de arriba) y un criterio de reversión claro si no funciona.
+
 ---
 
 ## 9. Riesgos
